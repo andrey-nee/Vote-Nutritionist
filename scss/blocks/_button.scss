@@ -5,14 +5,15 @@
   font-size: 16px;
   line-height: 1.2;
   color: $main-text-2;
+  border-radius: 60px;
+  max-width: min-content;
 
 }
 .button__vote {
   position: relative;
   padding: 13px 27px 13px 56px;
-  max-width: min-content;
-  border-radius: 60px;
   background-color: $button-bg-1;
+  border: 1px solid $button-bg-1;
 
   &::before {
     display: flex;
@@ -29,4 +30,9 @@
     background-size: contain;
     background-position: center center;
   }
+}
+.button__submit {
+  padding: 14px 42px;
+  background-color: $button-bg-2;
+  border: 1px solid $button-bg-2;
 }

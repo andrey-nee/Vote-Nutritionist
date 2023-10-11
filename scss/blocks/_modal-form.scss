@@ -1,9 +1,26 @@
 .modal-form {
 }
 .modal-form__container {
+  padding: 34px 46px 40px;
   width: 582px;
   height: 482px;
-  flex-shrink: 0;
+  // flex-shrink: 0;
   background-color: $modal-bg-1;
   border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.modal-form__main-title {
+}
+.modal-form__title {
+  margin: 0 0 34px;
+  text-align: center;
+  font-family: "Tilda Sans VF", "Arial", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  color: $main-text-1;
+}
+.modal-form__form {
 }
