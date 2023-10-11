@@ -36,7 +36,7 @@
   max-height: 46px;
   box-sizing: border-box;
 
-  &__hidden {
+  &.hidden {
     display: none;
   }
 }
@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
 
-  &__hidden {
+  &.hidden {
     display: none;
   }
 }

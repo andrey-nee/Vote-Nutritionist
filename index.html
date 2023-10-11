@@ -24,12 +24,11 @@
                 <div class="candidates__name">
                   Иванова Ольга Петровна
                 </div>
-                <!-- Исчезает, когда классу .candidate__vote-button добавляется __hidden -->
-                <div class="candidate__vote-button candidate__vote-button__hidden button button__vote" id="vote-button-01">
+                <div class="candidate__vote-button button button__vote" id="vote-button-01">
                   Голосовать
                 </div>
-                <!-- Исчезает, когда классу .candidate__vote-result добавляется __hidden -->
-                <div class="candidate__vote-result result result__voted">
+                <!-- Выбранный голос должен добавить класс .result__voted -->
+                <div class="candidate__vote-result hidden result">
                   <span class="result__span">Голос учтён</span>
                   <div class="result__result-bar" style="--w:35;"></div>
                   <div class="result__percent">35%</div>
@@ -43,12 +42,11 @@
                 <div class="candidates__name">
                   Никитина Ульяна Анатольевна
                 </div>
-                <!-- Исчезает, когда классу .candidate__vote-button добавляется __hidden -->
-                <div class="candidate__vote-button candidate__vote-button__hidden button button__vote" id="vote-button-02">
+                <div class="candidate__vote-button button button__vote" id="vote-button-02">
                   Голосовать
                 </div>
-                <!-- Исчезает, когда классу .candidate__vote-result добавляется __hidden -->
-                <div class="candidate__vote-result result">
+                <!-- Выбранный голос должен добавить класс .result__voted -->
+                <div class="candidate__vote-result hidden result">
                   <span class="result__span">Голос учтён</span>
                   <div class="result__result-bar" style="--w:50;"></div>
                   <div class="result__percent">50%</div>
@@ -62,12 +60,11 @@
                 <div class="candidates__name">
                   Ситникова Мария Дмитриевна
                 </div>
-                <!-- Исчезает, когда классу .candidate__vote-button добавляется __hidden -->
-                <div class="candidate__vote-button candidate__vote-button__hidden button button__vote" id="vote-button-03">
+                <div class="candidate__vote-button button button__vote" id="vote-button-03">
                   Голосовать
                 </div>
-                <!-- Исчезает, когда классу .candidate__vote-result добавляется __hidden -->
-                <div class="candidate__vote-result result">
+                <!-- Выбранный голос должен добавить класс .result__voted -->
+                <div class="candidate__vote-result hidden result">
                   <span class="result__span">Голос учтён</span>
                   <div class="result__result-bar" style="--w:10;"></div>
                   <div class="result__percent">10%</div>
@@ -81,12 +78,12 @@
                 <div class="candidates__name">
                   Спиридонова Кристина Михайловна
                 </div>
-                <!-- Исчезает, когда классу .candidate__vote-button добавляется __hidden -->
-                <div class="candidate__vote-button candidate__vote-button__hidden button button__vote" id="vote-button-04">
+                <!-- Исчезает, когда к классу .candidate__vote-button добавляется класс hidden -->
+                <div class="candidate__vote-button button button__vote" id="vote-button-04">
                   Голосовать
                 </div>
-                <!-- Исчезает, когда классу .candidate__vote-result добавляется __hidden -->
-                <div class="candidate__vote-result result">
+                <!-- Выбранный голос должен добавить класс .result__voted -->
+                <div class="candidate__vote-result hidden result">
                   <span class="result__span">Голос учтён</span>
                   <div class="result__result-bar" style="--w:0;"></div>
                   <div class="result__percent">0%</div>
@@ -104,7 +101,7 @@
       <div class="modal-form__container">
         <h2 class="modal-form__main-title visually-hidden">Форма голосования</h2>
         <p class="modal-form__title">Заполните форму, чтобы мы смогли учесть ваш голос</p>
-        <form class="modal-form__form vote-form form" action="post">
+        <form class="modal-form__form vote-form form" action="#">
           <div class="vote-form__container__input">
             <input class="vote-form__input vote-form__input__email" type="email" name="email" placeholder="Введите ваш эл. адрес">
             <input class="vote-form__input vote-form__input__name" type="text" name="name" placeholder="Введите ваше имя">
@@ -121,6 +118,8 @@
         </form>
       </div>
     </section>
+
+    <script src="./js/scripts.js"></script>
 
   </body>
 </html>

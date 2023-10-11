@@ -106,7 +106,7 @@
   max-height: 46px;
   box-sizing: border-box;
 }
-.candidate__vote-button__hidden {
+.candidate__vote-button.hidden {
   display: none;
 }
 
@@ -114,7 +114,7 @@
   display: flex;
   align-items: center;
 }
-.candidate__vote-result__hidden {
+.candidate__vote-result.hidden {
   display: none;
 }
 
@@ -128,6 +128,7 @@
   border-radius: 60px;
   max-width: -moz-min-content;
   max-width: min-content;
+  cursor: pointer;
 }
 
 .button__vote {
@@ -159,7 +160,6 @@
 }
 
 .modal {
-  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -169,13 +169,10 @@
   -webkit-backdrop-filter: blur(3.5px);
           backdrop-filter: blur(3.5px);
   z-index: 100;
-  opacity: 0;
-  pointer-events: none;
+  display: none;
 }
-
-.modal__form__active {
-  opacity: 1;
-  pointer-events: all;
+.modal.active {
+  display: flex;
 }
 
 .modal-form__container {
