@@ -1,0 +1,37 @@
+.candidates {
+}
+.candidates__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  list-style: none;
+}
+.candidates__item {
+  display: flex;
+  align-items: center;
+}
+.candidates__avatar {
+  margin-right: 40px;
+  width: 84px;
+  height: 84px;
+  border-radius: 15px;
+  background-color: $avatar-bg-1;
+  overflow: hidden;
+}
+.candidates__image {
+  object-fit: cover;
+}
+.candidates__name {
+  margin-right: 120px;
+  max-width: 234px;
+}
+.candidate__vote-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 160px;
+  max-height: 46px;
+  box-sizing: border-box;
+}

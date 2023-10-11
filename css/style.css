@@ -1,0 +1,197 @@
+@font-face {
+  src: url("../fonts/TildaSans-VF.woff2") format("woff2"), url("../fonts/TildaSans-VF.woff") format("woff");
+  font-family: "Tilda Sans VF";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/Forum-Regular.woff2") format("woff2"), url("../fonts/Forum-Regular.woff") format("woff");
+  font-family: "Forum";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.page {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100%;
+  font-family: "Tilda Sans VF", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.page.lock {
+  overflow: hidden;
+}
+
+.page__body {
+  display: grid;
+  align-content: start;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+}
+.page__body.lock {
+  overflow: hidden;
+}
+
+.main {
+  background-image: url("../img/page-bg-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.main__container {
+  padding: 119px 18px;
+}
+
+.main__title {
+  margin: 0 auto 119px;
+  text-align: center;
+  font-family: "Forum", "Arial", sans-serif;
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 89.9%; /* 66.526px */
+  letter-spacing: -1.48px;
+  text-transform: uppercase;
+}
+
+.candidates__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  list-style: none;
+}
+
+.candidates__item {
+  display: flex;
+  align-items: center;
+}
+
+.candidates__avatar {
+  margin-right: 40px;
+  width: 84px;
+  height: 84px;
+  border-radius: 15px;
+  background-color: #d9d9d9;
+  overflow: hidden;
+}
+
+.candidates__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.candidates__name {
+  margin-right: 120px;
+  max-width: 234px;
+}
+
+.candidate__vote-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 160px;
+  max-height: 46px;
+  box-sizing: border-box;
+}
+
+.button {
+  font-family: "Tilda Sans VF", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.button__vote {
+  position: relative;
+  padding: 13px 27px 13px 56px;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  border-radius: 60px;
+  background-color: #0e0e10;
+}
+.button__vote::before {
+  display: flex;
+  margin: auto 0;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 9px;
+  width: 34px;
+  height: 34px;
+  background-image: url("/img/vote-button-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6980392157);
+  -webkit-backdrop-filter: blur(3.5px);
+          backdrop-filter: blur(3.5px);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__form__active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-form__container {
+  width: 582px;
+  height: 482px;
+  flex-shrink: 0;
+  background-color: #d9d9d9;
+  border-radius: 30px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.inner-wrapper {
+  padding-left: 120px;
+  padding-right: 120px;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */
