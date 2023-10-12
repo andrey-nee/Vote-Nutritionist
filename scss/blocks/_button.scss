@@ -15,7 +15,21 @@
   padding: 13px 27px 13px 56px;
   background-color: $button-bg-1;
   border: 1px solid $button-bg-1;
+  transition: all 0.2s ease;
   
+  &:hover {
+    background-color: $button-hover-bg-1;
+    color: $main-text-1;
+    transition: all 0.2s ease;
+  }
+  
+  &:active, &:hover, &:focus {
+    @media (max-width: 768px) {
+      outline: 0;
+      outline-offset: 0;
+    }
+  }
+      
   @media (max-width: 425px) {
     padding: 13px 13px 13px 38px;
   }
@@ -46,4 +60,18 @@
   padding: 14px 42px;
   background-color: $button-bg-2;
   border: 1px solid $button-bg-2;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: $button-hover-bg-2;
+    color: $text-hover-1;
+    transition: all 0.2s ease;
+  }
+  
+  &:active, &:hover, &:focus {
+    @media (max-width: 768px) {
+      outline: 0;
+      outline-offset: 0;
+    }
+  }
 }

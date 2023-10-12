@@ -190,6 +190,18 @@
   padding: 13px 27px 13px 56px;
   background-color: #0e0e10;
   border: 1px solid #0e0e10;
+  transition: all 0.2s ease;
+}
+.button__vote:hover {
+  background-color: #d9d9d9;
+  color: #0e0e10;
+  transition: all 0.2s ease;
+}
+@media (max-width: 768px) {
+  .button__vote:active, .button__vote:hover, .button__vote:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
 }
 @media (max-width: 425px) {
   .button__vote {
@@ -223,6 +235,18 @@
   padding: 14px 42px;
   background-color: #ed41b8;
   border: 1px solid #ed41b8;
+  transition: all 0.2s ease;
+}
+.button__submit:hover {
+  background-color: #ffffff;
+  color: #ed41b8;
+  transition: all 0.2s ease;
+}
+@media (max-width: 768px) {
+  .button__submit:active, .button__submit:hover, .button__submit:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
 }
 
 .modal {
