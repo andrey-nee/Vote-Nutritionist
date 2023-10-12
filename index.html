@@ -24,7 +24,7 @@
                 <div class="candidates__name">
                   Иванова Ольга Петровна
                 </div>
-                <div class="candidate__vote-button button button__vote" id="vote-button-01">
+                <div class="candidate__vote-button button button__vote" id="id-ivanova-olga">
                   Голосовать
                 </div>
                 <!-- Выбранный голос должен добавить класс .result__voted -->
@@ -42,7 +42,7 @@
                 <div class="candidates__name">
                   Никитина Ульяна Анатольевна
                 </div>
-                <div class="candidate__vote-button button button__vote" id="vote-button-02">
+                <div class="candidate__vote-button button button__vote" id="id-nikitina-ulyana">
                   Голосовать
                 </div>
                 <!-- Выбранный голос должен добавить класс .result__voted -->
@@ -60,7 +60,7 @@
                 <div class="candidates__name">
                   Ситникова Мария Дмитриевна
                 </div>
-                <div class="candidate__vote-button button button__vote" id="vote-button-03">
+                <div class="candidate__vote-button button button__vote" id="id-sitnikova-mariya">
                   Голосовать
                 </div>
                 <!-- Выбранный голос должен добавить класс .result__voted -->
@@ -79,7 +79,7 @@
                   Спиридонова Кристина Михайловна
                 </div>
                 <!-- Исчезает, когда к классу .candidate__vote-button добавляется класс hidden -->
-                <div class="candidate__vote-button button button__vote" id="vote-button-04">
+                <div class="candidate__vote-button button button__vote" id="id-spiridonova-krisitina">
                   Голосовать
                 </div>
                 <!-- Выбранный голос должен добавить класс .result__voted -->
@@ -103,12 +103,13 @@
         <p class="modal-form__title">Заполните форму, чтобы мы смогли учесть ваш голос</p>
         <form class="modal-form__form vote-form form" action="#">
           <div class="vote-form__container__input">
-            <input class="vote-form__input vote-form__input__email" type="email" name="email" placeholder="Введите ваш эл. адрес">
-            <input class="vote-form__input vote-form__input__name" type="text" name="name" placeholder="Введите ваше имя">
-            <input class="vote-form__input vote-form__input__phone" type="tel" name="phone" placeholder="Введите ваш телефон">
+            <input class="vote-form__input vote-form__input__email" type="email" name="email" placeholder="Введите ваш эл. адрес" maxlength="50" required>
+            <input class="vote-form__input vote-form__input__name" type="text" name="name" placeholder="Введите ваше имя" maxlength="50" required>
+            <input class="vote-form__input vote-form__input__phone" type="tel" name="phone" placeholder="Введите ваш телефон" maxlength="50" required>
+            <input class="vote-form__input vote-form__input__id" id="input-id" type="hidden" name="id" maxlength="50" required>
           </div>
           <div class="vote-form__container__agreement">
-            <input class="vote-form__checkbox" type="checkbox" name="agreement" id="agreement">
+            <input class="vote-form__checkbox" type="checkbox" name="agreement" id="agreement" required>
             <label class="vote-form__label vote-form__label__agreement" for="agreement">Я согласен с политикой обработки персональных данных</label>
           </div>
           <div class="vote-form__container__action">

@@ -1,6 +1,9 @@
 const page = document.querySelector('.page');
 const modalForm = document.querySelector('.modal__form');
 const submitButton = document.querySelector('.vote-form__submit');
+const inputId = document.getElementById('input-id');
+
+console.log(inputId.value);
 
 var voteButtons = document.querySelectorAll('.button__vote');
 var results = document.querySelectorAll('.result');
@@ -10,6 +13,7 @@ for (let i = 0; i < voteButtons.length; i++) {
       page.classList.add('lock');
       modalForm.classList.add('active');
       console.log(voteButtons[i].id); //Выводим в консоль id выбранного голоса
+      inputId.value = voteButtons[i].id; //Записываем id выбранного голоса в скрытый input формы
   });
 }
 
