@@ -43,6 +43,10 @@
   display: flex;
   column-gap: 9px;
   align-items: center;
+  
+  @media (max-width: 425px) {
+    margin: 0 0 20px;  
+  }
 }
 .vote-form__checkbox {
   width: 20px;

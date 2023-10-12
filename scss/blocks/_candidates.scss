@@ -11,6 +11,15 @@
 .candidates__item {
   display: flex;
   align-items: end;
+
+  @media (max-width: 670px) {
+    column-gap: 10px;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 510px) {
+    align-items: center;
+  }
 }
 .candidates__avatar {
   margin-right: 40px;
@@ -20,6 +29,16 @@
   border-radius: 15px;
   background-color: $avatar-bg-1;
   overflow: hidden;
+
+  @media (max-width: 670px) {
+    margin: 0;
+  }
+    
+  @media (max-width: 425px) {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+  }
 }
 .candidates__image {
   object-fit: cover;
@@ -27,6 +46,14 @@
 .candidates__name {
   margin-right: 120px;
   width: 234px;
+
+  @media (max-width: 670px) {
+    margin: 0;
+  }
+
+  @media (max-width: 510px) {
+    width: auto;
+  }
 }
 .candidate__vote-button {
   display: flex;

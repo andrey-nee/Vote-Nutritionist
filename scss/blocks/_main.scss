@@ -6,17 +6,33 @@
 }
 .main__container {
   padding: 119px 18px;
+
+  @media (max-width: 768px) {
+    padding: 80px 18px;
+  }
+
+  @media (max-width: 425px) {
+    padding: 50px 10px;
+  }
 }
 .main__title {
   margin: 0 auto 119px;
   text-align: center;
   font-family: "Forum", "Arial", sans-serif;
-  font-size: 74px;
+  font-size: clamp(45px, 8vw, 74px);
   font-style: normal;
   font-weight: 400;
   line-height: 0.899;
   letter-spacing: -1.48px;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    margin: 0 auto 80px;
+  }
+
+  @media (max-width: 425px) {
+    margin: 0 auto 50px;
+  }
 }
 .main__vote {
 }

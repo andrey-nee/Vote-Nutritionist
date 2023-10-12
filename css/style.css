@@ -20,7 +20,7 @@
   font-family: "Tilda Sans VF", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 22px;
+  font-size: clamp(16px, 4vw, 22px);
   line-height: 1.2;
   color: #ffffff;
 }
@@ -51,17 +51,37 @@
 .main__container {
   padding: 119px 18px;
 }
+@media (max-width: 768px) {
+  .main__container {
+    padding: 80px 18px;
+  }
+}
+@media (max-width: 425px) {
+  .main__container {
+    padding: 50px 10px;
+  }
+}
 
 .main__title {
   margin: 0 auto 119px;
   text-align: center;
   font-family: "Forum", "Arial", sans-serif;
-  font-size: 74px;
+  font-size: clamp(45px, 8vw, 74px);
   font-style: normal;
   font-weight: 400;
   line-height: 0.899;
   letter-spacing: -1.48px;
   text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .main__title {
+    margin: 0 auto 80px;
+  }
+}
+@media (max-width: 425px) {
+  .main__title {
+    margin: 0 auto 50px;
+  }
 }
 
 .candidates__list {
@@ -77,6 +97,18 @@
   display: flex;
   align-items: end;
 }
+@media (max-width: 670px) {
+  .candidates__item {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 510px) {
+  .candidates__item {
+    align-items: center;
+  }
+}
 
 .candidates__avatar {
   margin-right: 40px;
@@ -87,6 +119,18 @@
   background-color: #d9d9d9;
   overflow: hidden;
 }
+@media (max-width: 670px) {
+  .candidates__avatar {
+    margin: 0;
+  }
+}
+@media (max-width: 425px) {
+  .candidates__avatar {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+  }
+}
 
 .candidates__image {
   -o-object-fit: cover;
@@ -96,6 +140,16 @@
 .candidates__name {
   margin-right: 120px;
   width: 234px;
+}
+@media (max-width: 670px) {
+  .candidates__name {
+    margin: 0;
+  }
+}
+@media (max-width: 510px) {
+  .candidates__name {
+    width: auto;
+  }
 }
 
 .candidate__vote-button {
@@ -137,6 +191,11 @@
   background-color: #0e0e10;
   border: 1px solid #0e0e10;
 }
+@media (max-width: 425px) {
+  .button__vote {
+    padding: 13px 13px 13px 38px;
+  }
+}
 .button__vote::before {
   display: flex;
   margin: auto 0;
@@ -151,6 +210,13 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+}
+@media (max-width: 425px) {
+  .button__vote::before {
+    left: 8px;
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .button__submit {
@@ -176,22 +242,42 @@
 }
 
 .modal-form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 10px;
   padding: 34px 46px 40px;
   max-width: 582px;
   background-color: #d9d9d9;
   border-radius: 30px;
   box-sizing: border-box;
 }
+@media (max-width: 425px) {
+  .modal-form__container {
+    padding: 34px 30px 40px;
+  }
+}
 
 .modal-form__title {
   margin: 0 0 34px;
+  max-width: 90%;
   text-align: center;
   font-family: "Tilda Sans VF", "Arial", sans-serif;
-  font-size: 26px;
+  font-size: clamp(20px, 6vw, 26px);
   font-style: normal;
   font-weight: 600;
   line-height: 1.2;
   color: #0e0e10;
+}
+@media (max-width: 425px) {
+  .modal-form__title {
+    margin: 0 0 28px;
+    max-width: 100%;
+  }
+}
+
+.modal-form__form {
+  width: 100%;
 }
 
 .vote-form__container__input {
@@ -250,6 +336,11 @@
        column-gap: 9px;
   align-items: center;
 }
+@media (max-width: 425px) {
+  .vote-form__container__agreement {
+    margin: 0 0 20px;
+  }
+}
 
 .vote-form__checkbox {
   width: 20px;
@@ -293,6 +384,20 @@
   width: 50%;
   -moz-column-gap: 32px;
        column-gap: 32px;
+}
+@media (max-width: 510px) {
+  .result {
+    max-width: 140px;
+    min-width: 140px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .result {
+    max-width: 120px;
+    min-width: 120px;
+  }
 }
 .result__voted {
   position: relative;
