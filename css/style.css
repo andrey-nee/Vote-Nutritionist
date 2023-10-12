@@ -199,6 +199,8 @@
 }
 @media (max-width: 768px) {
   .button__vote:active, .button__vote:hover, .button__vote:focus {
+    background-color: #0e0e10;
+    color: #ffffff;
     outline: 0;
     outline-offset: 0;
   }
@@ -244,6 +246,8 @@
 }
 @media (max-width: 768px) {
   .button__submit:active, .button__submit:hover, .button__submit:focus {
+    background-color: #ed41b8;
+    color: #ffffff;
     outline: 0;
     outline-offset: 0;
   }
