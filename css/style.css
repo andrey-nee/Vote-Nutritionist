@@ -111,6 +111,7 @@
 }
 
 .candidates__avatar {
+  display: flex;
   margin-right: 40px;
   width: 84px;
   height: 84px;
